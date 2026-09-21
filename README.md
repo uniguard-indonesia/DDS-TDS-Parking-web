@@ -24,6 +24,7 @@ Containerization: Docker / Docker Compose
 
 # Modular Project Structure
 
+```bash
 src/
 ├── asset/
 │   └──                           // Still empty                 
@@ -57,6 +58,7 @@ src/
 ├── App.css
 ├── index.jsx
 └── index.css                    // Put your Tailwind @tailwind directives here
+```
 
 # Local Developement
 
