@@ -1,9 +1,9 @@
-FROM node:20-alpine
+FROM node:24-alpine
 WORKDIR /app
 
-# Copy package files and install dependencies
+# Install exactly what package-lock.json says (same command GitHub Actions runs)
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 
 # Copy the rest of the project
 COPY . .
